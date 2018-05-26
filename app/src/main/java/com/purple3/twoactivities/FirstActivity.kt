@@ -23,6 +23,7 @@ class FirstActivity : AppCompatActivity() {
         setContentView(R.layout.activity_first)
 
         btnForNextPage = findViewById(R.id.btnToNextActivity)
+
     }
 
     override fun onStart() {
@@ -50,12 +51,13 @@ class FirstActivity : AppCompatActivity() {
         Log.e("Activity is in", "onDestroy")
     }
 
-    fun goToNextPage(view : View) {
-        btnForNextPage.setOnClickListener {
+    fun goToNextPage() { //Method reference given to button in design
+        //btnForNextPage.setOnClickListener {
+            Log.e("Next Button", "Clicked")
             var secondActivityIntent  = Intent(this@FirstActivity, SecondActivity::class.java)
             Toast.makeText(this, "Going to Second Activity...",Toast.LENGTH_LONG).show()
             startActivity(secondActivityIntent)
-        }
+       // }
     }
 
 }
