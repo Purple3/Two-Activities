@@ -51,7 +51,7 @@ class FirstActivity : AppCompatActivity() {
         Log.e("Activity is in", "onDestroy")
     }
 
-    fun goToNextPage() { //Method reference given to button in design
+    fun goToNextPage(view : View) { //Method reference given to button in design
         //btnForNextPage.setOnClickListener {
             Log.e("Next Button", "Clicked")
             var secondActivityIntent  = Intent(this@FirstActivity, SecondActivity::class.java)
