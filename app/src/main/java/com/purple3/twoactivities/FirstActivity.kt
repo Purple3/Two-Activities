@@ -8,9 +8,6 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 
-
-
-
 class FirstActivity : AppCompatActivity() {
 
     private lateinit var btnForNextPage : Button
